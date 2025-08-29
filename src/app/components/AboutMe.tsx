@@ -1,6 +1,7 @@
 "use client";
 
 import Contact from "@/app/components/Contact";
+import Age from "@/app/utils/Age";
 import { primary, secondary } from "@/app/utils/Stack";
 import { motion } from "framer-motion";
 import { container, item, fadeItem } from "@/app/utils/Animations";
@@ -11,7 +12,7 @@ export default function AboutMe() {
             <motion.div className="space-y-4 lg:space-y-6 text-center lg:text-left" variants={item}>
                 <motion.div variants={item}>
                     <h1 className="text-3xl lg:text-5xl font-bold mb-2 text-balance text-[#FAFAFA]">cursom</h1>
-                    <p className="text-base lg:text-lg mb-4 text-[#929292]">17 years old • Hungary</p>
+                    <p className="text-base lg:text-lg mb-4 text-[#929292]">{Age} years old • Hungary</p>
                     <p className="text-sm lg:text-base leading-relaxed max-w-md mx-auto lg:mx-0 text-[#C5C5C5]">Passionate about creating modern web applications and software solutions. Focused on clean code and exceptional user experiences.</p>
                 </motion.div>
                 <motion.div className="flex justify-center lg:justify-start" variants={item}>
